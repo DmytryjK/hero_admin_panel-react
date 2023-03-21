@@ -1,89 +1,89 @@
 {
-    "heroes": [
-        {
-            "id": 1,
-            "name": "Первый герой",
-            "description": "Первый герой в рейтинге!",
-            "element": "fire"
-        },
-        {
-            "id": 2,
-            "name": "Неизвестный герой",
-            "description": "Скрывающийся в тени",
-            "element": "wind"
-        },
-        {
-            "id": 3,
-            "name": "Морской герой",
-            "description": "Как аквамен, но не из DC",
-            "element": "water"
-        },
-        {
-            "id": 4,
-            "name": "Морской герой",
-            "description": "Как аквамен, но не из DC",
-            "element": "fire"
-        },
-        {
-            "id": 5,
-            "name": "Морской герой",
-            "description": "Как аквамен, но не из DC",
-            "element": "fire"
-        },
-        {
-            "id": 6,
-            "name": "Морской герой",
-            "description": "Как аквамен, но не из DC",
-            "element": "water"
-        },
-        {
-            "id": 7,
-            "name": "Змеляной герой",
-            "description": "Как земля, но не из DC",
-            "element": "earth"
-        },
-        {
-            "id": 8,
-            "name": "Змеляной герой",
-            "description": "Как земля, но не из DC",
-            "element": "earth"
-        }
-    ],
-    "filters": [
-        {   
-            "id" : 1,
-            "name": "Все",
-            "uniqClass": "btn-outline-dark",
-            "isActive": true,
-            "dataFilter": "all"
-        },
-        {   
-            "id" : 2,
-            "name": "Огонь",
-            "uniqClass": "btn-danger",
-            "isActive": false,
-            "dataFilter": "fire"
-        },
-        {   
-            "id" : 3,
-            "name": "Вода",
-            "uniqClass": "btn-primary",
-            "isActive": false,
-            "dataFilter": "water"
-        },
-        {   
-            "id" : 4,
-            "name": "Ветер",
-            "uniqClass": "btn-success",
-            "isActive": false,
-            "dataFilter": "wind"
-        },
-        {   
-            "id" : 5,
-            "name": "Земля",
-            "uniqClass": "btn-secondary",
-            "isActive": false,
-            "dataFilter": "earth"
-        }
-    ]
+  "heroes": [
+    {
+      "id": 1,
+      "name": "Первый герой",
+      "description": "Первый герой в рейтинге!",
+      "element": "fire"
+    },
+    {
+      "id": 2,
+      "name": "Неизвестный герой",
+      "description": "Скрывающийся в тени",
+      "element": "wind"
+    },
+    {
+      "id": 3,
+      "name": "Морской герой",
+      "description": "Как аквамен, но не из DC",
+      "element": "water"
+    },
+    {
+      "id": 4,
+      "name": "Морской герой",
+      "description": "Как аквамен, но не из DC",
+      "element": "fire"
+    },
+    {
+      "id": 5,
+      "name": "Морской герой",
+      "description": "Как аквамен, но не из DC",
+      "element": "fire"
+    },
+    {
+      "id": 6,
+      "name": "Морской герой",
+      "description": "Как аквамен, но не из DC",
+      "element": "water"
+    },
+    {
+      "id": 7,
+      "name": "Змеляной герой",
+      "description": "Как земля, но не из DC",
+      "element": "earth"
+    },
+    {
+      "id": 8,
+      "name": "Змеляной герой",
+      "description": "Как земля, но не из DC",
+      "element": "earth"
+    }
+  ],
+  "filters": [
+    {
+      "id": 1,
+      "name": "Все",
+      "uniqClass": "btn-outline-dark",
+      "isActive": true,
+      "dataFilter": "all"
+    },
+    {
+      "id": 2,
+      "name": "Огонь",
+      "uniqClass": "btn-danger",
+      "isActive": false,
+      "dataFilter": "fire"
+    },
+    {
+      "id": 3,
+      "name": "Вода",
+      "uniqClass": "btn-primary",
+      "isActive": false,
+      "dataFilter": "water"
+    },
+    {
+      "id": 4,
+      "name": "Ветер",
+      "uniqClass": "btn-success",
+      "isActive": false,
+      "dataFilter": "wind"
+    },
+    {
+      "id": 5,
+      "name": "Земля",
+      "uniqClass": "btn-secondary",
+      "isActive": false,
+      "dataFilter": "earth"
+    }
+  ]
 }

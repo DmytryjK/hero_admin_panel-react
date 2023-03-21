@@ -13,6 +13,7 @@
     "formik": "^2.2.9",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-id-generator": "^3.0.2",
     "react-redux": "^8.0.5",
     "react-scripts": "5.0.1",
     "sass": "^1.59.3",

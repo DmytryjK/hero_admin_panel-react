@@ -1,11 +1,10 @@
-const initialState = {
-    heroes: [],
-    isHeroDeleted: false,
-    heroesLoadingStatus: 'idle',
-    filters: [],
-    activeFilterName: 'all',
-    renderedHeroes: [],
-    heroesAddForm: {}
+const   initialState = {
+        heroes: [],
+        isHeroDeleted: false,
+        heroesLoadingStatus: 'idle',
+        filters: [],
+        activeFilterName: 'all',
+        renderedHeroes: []
 }
 
 const reducer = (state = initialState, action) => {
@@ -59,7 +58,8 @@ const reducer = (state = initialState, action) => {
         case 'ADD_HERO_FROM_FORM':
             return {
                 ...state,
-                heroesAddForm: action.payload
+                heroes: [...state.heroes, action.payload],
+                renderedHeroes: [...state.heroes, action.payload]
             }
         default: return state
     }

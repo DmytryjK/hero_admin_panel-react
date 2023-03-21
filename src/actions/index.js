@@ -68,14 +68,11 @@ export const activeFiltersName = (dataFilter) => {
     }
 }
 
-export const addHero = (value, heroesAddForm) => {
+export const addHero = (values, id) => {
     // console.log(value)
     return {
         type: 'ADD_HERO_FROM_FORM',
-        payload: {
-            ...heroesAddForm,
-            [value] : value
-        }
+        payload: {id, ...values}
     }
 }
 

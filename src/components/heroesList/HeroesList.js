@@ -31,11 +31,10 @@ const HeroesList = () => {
 
 
     const removeItem = (id) => {
-        dispatch(heroesDelete(heroes, id));
-        
-        // fetch(`http://localhost:3001/heroes/${id}`, {
-        //     method: 'DELETE'
-        // });
+        dispatch(heroesDelete(heroes, id));        
+        fetch(`http://localhost:3001/heroes/${id}`, {
+            method: 'DELETE'
+        });
     }
 
     if (heroesLoadingStatus === "loading") {
