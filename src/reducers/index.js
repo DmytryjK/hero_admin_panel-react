@@ -4,7 +4,8 @@ const   initialState = {
         heroesLoadingStatus: 'idle',
         filters: [],
         activeFilterName: 'all',
-        renderedHeroes: []
+        renderedHeroes: [],
+        isStartAnimation: true
 }
 
 const reducer = (state = initialState, action) => {
@@ -36,8 +37,9 @@ const reducer = (state = initialState, action) => {
         case 'HEROES_DELETE':
             return {
                 ...state,
-                heroes: action.payload,
+                isStartAnimation: false,
                 isHeroDeleted: true,
+                heroes: action.payload,
                 renderedHeroes: action.payload
             }
         case 'FILTERS_FETCHED':
@@ -60,6 +62,11 @@ const reducer = (state = initialState, action) => {
                 ...state,
                 heroes: [...state.heroes, action.payload],
                 renderedHeroes: [...state.heroes, action.payload]
+            }
+        case 'END_ANIMATION':
+            return {
+                ...state,
+                isStartAnimation: false
             }
         default: return state
     }

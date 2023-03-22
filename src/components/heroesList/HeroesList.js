@@ -27,14 +27,13 @@ const HeroesList = () => {
 
     useEffect(() => {
         dispatch(heroesFiltered([...heroes], activeFilterName));
-    }, [isHeroDeleted, activeFilterName])
-
+    }, [isHeroDeleted]);
 
     const removeItem = (id) => {
-        dispatch(heroesDelete(heroes, id));        
-        fetch(`http://localhost:3001/heroes/${id}`, {
-            method: 'DELETE'
-        });
+        dispatch(heroesDelete(heroes, id));    
+        // fetch(`http://localhost:3001/heroes/${id}`, {
+        //     method: 'DELETE'
+        // });
     }
 
     if (heroesLoadingStatus === "loading") {
@@ -44,7 +43,7 @@ const HeroesList = () => {
     }
 
     const renderHeroesList = (arr) => {
-
+        console.log(arr)
         if (arr.length === 0) {
             return <h5 className="text-center mt-5">Героев пока нет</h5>
         }
@@ -54,11 +53,9 @@ const HeroesList = () => {
         })
     }
 
-    let renderedElements = renderHeroesList(renderedHeroes);
-
     return (
         <ul>
-            {renderedElements}
+            {renderHeroesList(renderedHeroes)}
         </ul>
     )
 }

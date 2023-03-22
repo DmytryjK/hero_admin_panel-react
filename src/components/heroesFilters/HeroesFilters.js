@@ -50,7 +50,7 @@ const HeroesFilters = () => {
             )
         })
     }
-
+    
     const renderedFilters = createFilters(filters);
 
     return (

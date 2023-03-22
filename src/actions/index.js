@@ -75,3 +75,10 @@ export const addHero = (values, id) => {
         payload: {id, ...values}
     }
 }
+
+export const animationsIsEnd = () => {
+    return {
+        type: 'END_ANIMATION'
+    }
+}
+
