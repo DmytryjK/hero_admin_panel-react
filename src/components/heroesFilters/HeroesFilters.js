@@ -16,9 +16,17 @@ const HeroesFilters = () => {
     const {request} = useHttp();
 
     useEffect(() => {
-        request("http://localhost:3001/filters")
-            .then(data => dispatch(filtersFetched(data)));
-    }, [])
+        async function fetchData() {
+          try {
+            const data = await request("http://localhost:3001/filters");
+            dispatch(filtersFetched(data));
+          } catch (error) {
+            console.error(error);
+          }
+        }
+      
+        fetchData();
+    }, []);
 
     const filterHeroes = (id, dataFilter) => {
         dispatch(filtersAddActiveClass(filters, id));

@@ -67,7 +67,6 @@ const HeroesAddForm = () => {
         validate,
         onSubmit: (values, {resetForm}) => {
             dispatch(addHero(values, id));
-            console.log({...values, id});
             fetch('http://localhost:3001/heroes/', {
                 method: 'POST',
                 body: JSON.stringify({id, ...values}),

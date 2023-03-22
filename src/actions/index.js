@@ -75,9 +75,3 @@ export const addHero = (values, id) => {
         payload: {id, ...values}
     }
 }
-
-
-
-
-
-
