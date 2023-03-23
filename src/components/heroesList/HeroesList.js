@@ -2,7 +2,7 @@ import {useHttp} from '../../hooks/http.hook';
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 
-import {heroesData} from '../../dataForHosting/heroesData';
+import {heroesData} from '../../dataForHosting/heroeData';
 
 import { heroesFetching, heroesFetched, heroesFetchingError, heroesDelete, heroesFiltered } from '../../actions';
 import HeroesListItem from "../heroesListItem/HeroesListItem";
@@ -22,7 +22,7 @@ const HeroesList = () => {
         // request("http://localhost:3001/heroes")
         //     .then(data => dispatch(heroesFetched(data)))
         //     .catch(() => dispatch(heroesFetchingError()))
-        dispatch(heroesFetched(heroesData));
+        dispatch(heroesFetched(heroesData()));
 
         // eslint-disable-next-line
     }, []);
@@ -45,7 +45,6 @@ const HeroesList = () => {
     }
 
     const renderHeroesList = (arr) => {
-        console.log(arr)
         if (arr.length === 0) {
             return <h5 className="text-center mt-5">Героев пока нет</h5>
         }

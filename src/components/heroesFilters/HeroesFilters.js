@@ -28,7 +28,7 @@ const HeroesFilters = () => {
         // }
       
         // fetchData();
-        dispatch(filtersFetched(filtersData));
+        dispatch(filtersFetched(filtersData()));
 
     }, []);
 

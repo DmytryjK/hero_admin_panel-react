@@ -14,7 +14,6 @@ const HeroesListItem = ({itemId, removeItem, name, description, element}) => {
             duration: 300,
         },
         onRest: () => {
-            console.log('test')
             if (!isAnimate) {
               removeItem(itemId);
               setIsAnimate(true);
