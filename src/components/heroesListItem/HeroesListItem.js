@@ -1,9 +1,7 @@
 import { useTransition, animated } from '@react-spring/web'
 import { useState } from 'react';
-import { useSelector } from 'react-redux';
 
 const HeroesListItem = ({itemId, removeItem, name, description, element}) => {
-    const {activeFilterName} = useSelector(state => state);
     const [isAnimate, setIsAnimate] = useState(true);
 
     const transitions  = useTransition(isAnimate, {
