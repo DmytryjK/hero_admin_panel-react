@@ -46,7 +46,7 @@ const HeroesListItem = ({itemId, removeItem, name, description, element}) => {
         transitions ((style, item) => 
             item && (
             <animated.li style={style} className={`card flex-row mb-4 shadow-lg text-white ${elementClassName}`}>
-                <img src="http://www.stpaulsteinbach.org/wp-content/uploads/2014/09/unknown-hero.jpg" 
+                <img src="https://us.123rf.com/450wm/kritchanut/kritchanut1407/kritchanut140700071/29727801-homme-d-affaires-silhouette-photo-de-profil-avatar.jpg?ver=6" 
                     className="img-fluid w-25 d-inline" 
                     alt="unknown hero" 
                     style={{'objectFit': 'cover'}}/>
