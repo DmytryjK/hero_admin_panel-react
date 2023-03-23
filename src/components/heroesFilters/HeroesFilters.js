@@ -2,6 +2,8 @@ import {useHttp} from '../../hooks/http.hook';
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 
+import {filtersData} from '../../dataForHosting/filtersData';
+
 import { filtersFetched, filtersAddActiveClass, heroesFiltered, activeFiltersName } from '../../actions';
 // Задача для этого компонента:
 // DONE Фильтры должны формироваться на основании загруженных данных
@@ -16,16 +18,18 @@ const HeroesFilters = () => {
     const {request} = useHttp();
 
     useEffect(() => {
-        async function fetchData() {
-          try {
-            const data = await request("http://localhost:3001/filters");
-            dispatch(filtersFetched(data));
-          } catch (error) {
-            console.error(error);
-          }
-        }
+        // async function fetchData() {
+        //   try {
+        //     const data = await request("http://localhost:3001/filters");
+        //     dispatch(filtersFetched(data));
+        //   } catch (error) {
+        //     console.error(error);
+        //   }
+        // }
       
-        fetchData();
+        // fetchData();
+        dispatch(filtersFetched(filtersData));
+
     }, []);
 
     const filterHeroes = (id, dataFilter) => {
