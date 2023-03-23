@@ -38,26 +38,14 @@ export const heroesData = () => {
         },
         {
           "id": 7,
-          "name": "Змеляной герой",
+          "name": "Земляной герой",
           "description": "Как земля, но не из DC",
           "element": "earth"
         },
         {
           "id": 8,
-          "name": "Змеляной герой",
+          "name": "Земляной герой",
           "description": "Как земля, но не из DC",
-          "element": "earth"
-        },
-        {
-          "id": "added-hero32",
-          "name": "sdfgsdfg",
-          "description": "jjnj",
-          "element": "water"
-        },
-        {
-          "id": "added-hero87",
-          "name": "sdfgsdfg",
-          "description": " kkn ",
           "element": "earth"
         }
     ]
