@@ -67,13 +67,13 @@ const HeroesAddForm = () => {
         validate,
         onSubmit: (values, {resetForm}) => {
             dispatch(addHero(values, id));
-            fetch('http://localhost:3001/heroes/', {
-                method: 'POST',
-                body: JSON.stringify({id, ...values}),
-                headers: {
-                    'Content-type': 'application/json; charset=UTF-8',
-                },
-            })
+            // fetch('http://localhost:3001/heroes/', {
+            //     method: 'POST',
+            //     body: JSON.stringify({id, ...values}),
+            //     headers: {
+            //         'Content-type': 'application/json; charset=UTF-8',
+            //     },
+            // })
             resetForm();
         }
     });
